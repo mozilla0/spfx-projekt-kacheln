@@ -4,6 +4,10 @@ Webpart mit einer Kachel-Leiste für SharePoint-Websites. Die Kacheln öffnen Po
 SharePoint-Seiten oder andere Ziele in einer Lightbox, in einem neuen Tab oder im gleichen Fenster
 und übergeben Power Apps auf Wunsch Startparameter, damit die App weiss, von welcher Website sie gestartet wurde.
 
+<img width="2560" height="1520" alt="image" src="https://github.com/user-attachments/assets/d2d6cd39-2f25-4065-bc6b-5878780f619b" />
+<img width="2560" height="1520" alt="image" src="https://github.com/user-attachments/assets/ff48513e-6a1a-4b0e-aee6-c69b750208bf" />
+<img width="2560" height="1520" alt="image" src="https://github.com/user-attachments/assets/7961a9d3-bcff-4e30-952e-99d801a4c936" />
+
 ## Funktionen
 
 - Kachel-Leiste (Titel, Fluent-UI-Icon, Farbe aus dem Website-Design oder fest)

@@ -1,0 +1,84 @@
+// Kachel-Leiste, Farben aus dem Website-Design.
+// Die Variablen werden im WebPart (onThemeChanged) gesetzt; Fallback = Fluent-UI-Standardblau.
+
+.projektKacheln {
+  color: var(--bodyText, #323130);
+  font-family: inherit;
+}
+
+.mitHintergrund {
+  background-color: var(--neutralLighter, #f3f2f1);
+  padding-bottom: 20px;
+}
+
+.titel {
+  margin: 0 0 8px;
+  padding-top: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.kacheln {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.kachel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  padding: 8px 4px;
+  border: 0;
+  border-radius: 0;
+  background-color: var(--kachelFarbe, #0078d4);
+  color: var(--kachelText, #fff);
+  cursor: pointer;
+  font-family: inherit;
+  overflow: hidden;
+  transition: background-color 0.1s ease;
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--kachelFarbeHover, #106ebe);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--bodyText, #323130);
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.icon {
+  font-size: 50px;
+  line-height: 60px;
+  height: 60px;
+}
+
+.name {
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  // max. 2 Zeilen
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.leer {
+  padding: 16px;
+  border: 1px dashed var(--bodyText, #323130);
+  text-align: center;
+}

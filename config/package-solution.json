@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "Projekt-Kacheln",
+    "id": "c29473e9-1e6c-4a9a-9c09-2e0a003bb672",
+    "version": "1.0.1.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "developer": {
+      "name": "Joker IT AG",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Kachel-Leiste mit Lightbox für Power Apps (Startparameter Source/FolderList)"
+      },
+      "longDescription": {
+        "default": "Kacheln öffnen Power Apps, SharePoint-Seiten oder andere Ziele in einer Lightbox, in einem neuen Tab oder im gleichen Fenster. Power Apps erhalten die Website-URL (Source) und optional die Unterordner eines Ordners (FolderList) als Startparameter."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "Projekt-Kacheln",
+        "description": "Webpart Projekt-Kacheln mit Lightbox",
+        "id": "51334846-1010-4197-984a-2a351b44d174",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/projekt-kacheln.sppkg"
+  }
+}

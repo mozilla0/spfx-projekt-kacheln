@@ -1,0 +1,127 @@
+// Lightbox mit Iframe, Spinner und Schliessen-Knopf
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.sichtbar {
+  opacity: 1;
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: default;
+}
+
+.contentHolder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 96vw;
+  max-height: 92vh;
+}
+
+.iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: #fff;
+  box-shadow: 0.267rem 0.267rem 0.267rem 0 rgba(3, 3, 3, 0.3);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.iframeGeladen {
+  opacity: 1;
+}
+
+.fehler {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(600px, 90%);
+}
+
+// Halbkreis-Spinner
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin: -30px 0 0 -30px;
+  border-radius: 100%;
+  box-sizing: border-box;
+
+  .circle1,
+  .circle2 {
+    position: absolute;
+    inset: 0;
+    border-radius: 100%;
+    border: 6px solid transparent;
+    box-sizing: border-box;
+  }
+
+  .circle1 {
+    border-top-color: #fff;
+    animation: spinnerDrehen 1s infinite;
+  }
+
+  .circle2 {
+    border-bottom-color: #fff;
+    animation: spinnerDrehen 1s infinite alternate;
+  }
+}
+
+@keyframes spinnerDrehen {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.aktionen {
+  position: fixed;
+  top: 0.625em;
+  right: 0.625em;
+  display: flex;
+  gap: 0.5em;
+}
+
+.aktion {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25em;
+  height: 2.25em;
+  padding: 0;
+  border: 0;
+  border-radius: 2px;
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 1px;
+  }
+}

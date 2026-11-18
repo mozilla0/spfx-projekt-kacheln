@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "081d8c1d-d079-4d75-8995-c2afb2d9f980",
+  "alias": "ProjektKachelnWebPart",
+  "componentType": "WebPart",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [
+    {
+      "groupId": "d3678e1d-6107-4bb1-90ed-f6cf0208da70",
+      "group": { "default": "Projekt" },
+      "title": { "default": "Projekt-Kacheln" },
+      "description": { "default": "Kachel-Leiste, die Power Apps und Seiten in einer Lightbox öffnet – mit Startparametern Source und FolderList" },
+      "officeFabricIconFontName": "Tiles",
+      "properties": {
+        "titel": "",
+        "hintergrund": true,
+        "kachelFarbe": "",
+        "kacheln": []
+      }
+    }
+  ]
+}
